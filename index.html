@@ -63,7 +63,7 @@
         <section class="section-intro">
             <h1>¡Hola a todos!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
-                fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+                fugiat eligendi <span>quidem in iure tempora!</span> Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
                 reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <a href="masinformacion.html"><span>Más información</span></a>
         </section>
@@ -71,19 +71,20 @@
         <div class="training">
             <article class="col">
                 <h2>
-                    <a href="#">7 + Animations</a>
+                    <a href="#">Angular 7 + Animations</a>
                 </h2>
-                <img src="images/curso.png" alt="logo Angular">
+                <img src="img/curso.png" alt="logo Angular" width="93" height="93">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci
                     quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+
             </article>
 
             <article class="col">
                 <h2>
                     <a href="#">Docker + Kubernetes</a>
                 </h2>
-                <img src="images/curso.png" alt="logo Docker">
+                <img src="img/curso.png" alt="logo Docker" width="93" height="93">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci
                     quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
@@ -93,7 +94,7 @@
                 <h2>
                     <a href="#">NodeJS</a>
                 </h2>
-                <img src="images/curso.png" alt="logo Node">
+                <img src="img/curso.png" alt="logo Node" width="93" height="93">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
                     molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci
                     quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
@@ -101,35 +102,40 @@
 
         </div>
 
+        <div class="clear"></div>
+
         <div class="spot">
 
-            <div class="spot__video">
-                <img src="images/video.png" alt="Vídeo promocional">
-                <h3>Próximas convocatorias</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
-                    molestiae.</p>
+            <div class="container">
+                <div class="spot__video">
+                    <video src="video/nature.mp4" controls alt="Vídeo promocional" width="500"></video>
+                </div>
+    
+                <div class="spot__form">
+                    <h3>Próximas convocatorias</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                        molestiae.</p>
+                    <form class="spot__form__send-email">
+                        <label class="spot__form__send-email__label" for="email">Indica tu correo electrónico</label><br>
+                        <input class="spot__form__send-email__input" type="text" id="email" placeholder="Introduce un email válido"><br>
+                        <button class="button button--rounded type=" submit">Me apunto!</button>
+                    </form>
+                </div>
             </div>
-
-            <div class="spot__form">
-                <form class="spot__form__send-email">
-                    <label class="spot__form__send-email__label" for="email">Indica tu correo electrónico</label>
-                    <input class="spot__form__send-email__input" type="text" id="email" placeholder="Introduce un email válido">
-                    <button class="button button--submit type=" submit">Me apunto!</button>
-                </form>
-            </div>
-
+            
         </div>
-
+            
         <article class="services">
             <h2>Servicios de Apoyo Profesional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
-            reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
-            aspernatur, natus quidem voluptas.</p>
-            <a href="#">Lorem ipsum</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+                fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+                reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
+                aspernatur, natus quidem voluptas.</p>
+            <a href="#" class="button--rounded">Lorem ipsum</a>
         </article>
 
     </main>
-
+    
     <footer class="foot-element">
         <div class="container">
             <ul class="foot-element__li">
