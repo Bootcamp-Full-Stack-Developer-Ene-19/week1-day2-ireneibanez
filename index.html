@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__list-ini">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+
+                <li>
+                    <div class="dropdown">
+                        <a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true"
+                            aria-expanded="false">
+                            Formación</a>
+                        <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#">Angular 7 + Animations &mdash; <small>18 Ene 2019</small></a>
+                            <a href="#">Angular 7 Avanzado &mdash; <small>Proximamente</small></a>
+                            <a href="#">Docker + Kubernetes &mdash;<small>Proximamente</small></a>
+                            <a href="#">NodeJS mdash &mdash;<small>Proximamente</small></a>
+                            <a href="#">CSS + Sass Avanzado &mdash;<small>Proximamente</small></a>
+                            <a href="#">VueJS 2 &mdash;<small>Proximamente</small></a>
+                            <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                            <a href="#">Bootcamp</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+        <form class="search">
+            <label for="busqueda" class="search__label">Buscar en el Campus</label>
+            <input type="text" class="search__input" id="busqueda" autocomplete="off" aria-haspopup="true"
+                aria-expanded="false">
+            <div class="dropdown__menu dropdown__menu--search" aria-labelledby="searchAutocomplete">
+                <a href="#">Angular 7</a>
+                <a href="#">Angular 7 + Animations</a>
+                <a href="#">Angular 7 Avanzado</a>
+                <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                <a href="#">Otros cursos de formación</a>
+                <a href="#">Bootcamp</a>
+            </div>
+            <button type="submit" class="button button--submit">Buscar</button>
+        </form>
+
+    </header>
+
+    <main>
+
+        <section class="section-intro">
+            <h1>¡Hola a todos!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+                fugiat eligendi <span>quidem in iure tempora!</span> Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+                reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="masinformacion.html"><span>Más información</span></a>
+        </section>
+
+        <div class="training">
+            <article class="col">
+                <h2>
+                    <a href="#">Angular 7 + Animations</a>
+                </h2>
+                <img src="img/curso.png" alt="logo Angular" width="93" height="93">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci
+                    quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+
+            </article>
+
+            <article class="col">
+                <h2>
+                    <a href="#">Docker + Kubernetes</a>
+                </h2>
+                <img src="img/curso.png" alt="logo Docker" width="93" height="93">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci
+                    quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+            </article>
+
+            <article class="col">
+                <h2>
+                    <a href="#">NodeJS</a>
+                </h2>
+                <img src="img/curso.png" alt="logo Node" width="93" height="93">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                    molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci
+                    quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
+            </article>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="spot">
+
+            <div class="container">
+                <div class="spot__video">
+                    <video src="video/nature.mp4" controls alt="Vídeo promocional" width="500"></video>
+                </div>
+    
+                <div class="spot__form">
+                    <h3>Próximas convocatorias</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere
+                        molestiae.</p>
+                    <form class="spot__form__send-email">
+                        <label class="spot__form__send-email__label" for="email">Indica tu correo electrónico</label><br>
+                        <input class="spot__form__send-email__input" type="text" id="email" placeholder="Introduce un email válido"><br>
+                        <button class="button button--rounded type=" submit">Me apunto!</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+            
+        <article class="services">
+            <h2>Servicios de Apoyo Profesional</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae
+                fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur
+                reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid maxime et esse
+                aspernatur, natus quidem voluptas.</p>
+            <a href="#" class="button--rounded">Lorem ipsum</a>
+        </article>
+
+    </main>
+    
+    <footer class="foot-element">
+        <div class="container">
+            <ul class="foot-element__li">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Formación</a></li>
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="foot-element__copyright">
+            <p>@Company 2018</p>
+        </div>
+    </footer>
+
+    <script src="js/toggler.js"></script>
+
+</body>
+
+</html>
