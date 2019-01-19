@@ -1,0 +1,104 @@
+@import "reset.css";
+@import "toggler.css";
+
+/*-------------------------------- 
+-------------------------HEADER*/
+
+header {
+    background-color: black;
+    height: 56px;
+}
+
+.navbar__list-ini li {
+    float: left;  
+    text-align: center;
+    padding: 18px;
+    }
+     
+
+.navbar__list-ini li > a, .dropdown__btn{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
+}
+
+.search{
+    float:right;
+    padding-top: 9px;
+    padding-right: 14px;
+    padding-bottom:10px;
+}
+
+.search__label{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cccccc;
+    border-color: black
+}
+
+.search__input{
+    width: 203px;
+    height:37px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.button{
+    height: 37px;
+}
+
+.button--submit{
+    border-radius: 4px;
+    background-color:#ffe55d;
+}
+
+
+
+/*-------------------------------- 
+-------------------------MAIN*/
+
+
+.section-intro{
+  height: 382px;
+  background-color: #efefef;
+  padding-left: 61px;
+  padding-top: 61px;
+  padding-bottom: 65px;
+}
+
+.section-intro h1{
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.section-intro a{
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #7ed321;
+    padding-left: 16px;
+    padding-right: 19px;
+    padding-bottom: 18px;
+    padding-top:15px; 
+}
+
+.section-intro a span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.section-intro p{
+    max-width: 833px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.spot{
+    height: 557px;
+    background-color: #e8f6fc;
+}
