@@ -128,8 +128,8 @@ header {
 -------------------------training*/
 .training {
     display: flex;
-    justify-content: space-between;
-    padding: 100px;
+    justify-content: center;
+    padding: 69px 98px;
 }
 
 article img {
@@ -138,8 +138,12 @@ article img {
     margin-top: 5px;
 }
 
+article + article{
+    margin-left: 30px;
+}
+
 .col {
-    max-width: 30%;
+    max-width: 395px;
 }
 
 .col a {
@@ -158,9 +162,6 @@ article img {
     line-height: 1.69;
 }
 
-.clear{
-    clear: both;
-}
 
 /*-------------------------------- 
 -------------------------spot*/
@@ -172,6 +173,7 @@ article img {
     background-color: #e8f6fc;
     display: flex;
     justify-content: center;
+    clear: left;
 }
 
 .spot__form {
