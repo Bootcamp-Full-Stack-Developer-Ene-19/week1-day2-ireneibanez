@@ -1,8 +1,12 @@
 @import "reset.css";
 @import "toggler.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
 /*-------------------------------- 
 -------------------------HEADER*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
 header {
     background-color: #4a4a4a;
@@ -21,7 +25,6 @@ header {
 .dropdown__btn {
     text-decoration: none;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
 
@@ -45,7 +48,6 @@ header {
 
 .search__label {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #cccccc;
     border-color: black
 }
@@ -68,8 +70,8 @@ header {
     border-radius: 4px;
     background-color: #ffe55d;
     padding: 0 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: 600;
 }
 
 
@@ -89,9 +91,9 @@ header {
 
 .section-intro h1 {
     font-size: 62px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #4a4a4a;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .section-intro a {
@@ -103,10 +105,10 @@ header {
     padding-right: 19px;
     padding-bottom: 18px;
     padding-top: 15px;
+    font-weight: 600;
 }
 
 .section-intro a span {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #ffffff;
 }
@@ -115,9 +117,9 @@ header {
     max-width: 833px;
     min-height: 95px;
     line-height: 27px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin-bottom: 12px;
+    font-weight: 300;
 }
 
 .section-intro p span {
@@ -150,13 +152,12 @@ article + article{
     display: inline-block;
     text-decoration: none;
     font-size: 26px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #4a90e2;
     margin-bottom: 13px;
+    font-weight: 300;
 }
 
 .col p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #333333;
     line-height: 1.69;
@@ -177,8 +178,8 @@ article + article{
 }
 
 .spot__form {
-    display: inline-block;
     margin-left: 37px;
+    float:right;
 }
 
 .spot__video {
@@ -187,10 +188,10 @@ article + article{
 }
 
 .spot__form h3 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
     color: #4a4a4a;
     margin-bottom: 10px;
+    font-weight: 300;
 }
 
 .spot__form p {
@@ -200,7 +201,6 @@ article + article{
 }
 
 .spot__form__send-email__label, .spot__form p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #333333;
 
@@ -214,7 +214,6 @@ article + article{
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 13px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #9b9b9b;
     margin: 5px 0px 14px 0px;
@@ -224,12 +223,12 @@ article + article{
     border-radius: 8px;
     background-color: #4a90e2;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
 
 .spot__form__send-email .button--rounded {
     padding: 0 12px;
+    font-weight: 600;
 }
 
 /*-------------------------------- 
@@ -239,20 +238,20 @@ article + article{
     margin-left: 200px;
     margin-right: 200px;
     text-align: center;
+    clear: right;
 }
 
 .services h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 34px;
     color: #4a4a4a;
     text-align: center;
     margin-bottom: 28px;
+    font-weight: 300;
 }
 
 .services p {
     text-align: center;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #333333;
 }
 
@@ -264,6 +263,7 @@ article + article{
     padding-bottom: 11px;
     padding-top: 10px;
     margin-top: 13px;
+    font-weight: 600;
 }
 
 
@@ -294,13 +294,11 @@ article + article{
     color: #4a90e2;
     display: inline;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 18px;
 }
 
 .foot-element__copyright {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #4a4a4a;
 }
