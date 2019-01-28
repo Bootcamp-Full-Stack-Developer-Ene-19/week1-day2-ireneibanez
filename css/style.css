@@ -85,7 +85,6 @@ header {
 .section-intro {
     height: 382px;
     background-color: #efefef;
-    padding: 61px 0 65px 61px;
     clear: both;
 }
 
@@ -169,18 +168,15 @@ article + article{
 
 
 .spot {
-    padding: 100px 300px;
     height: 557px;
     background-color: #e8f6fc;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    clear: left;
+    clear: left;    
 }
 
-.spot__form {
-    margin-left: 37px;
-    float:right;
-}
+
 
 .spot__video {
     display: inline-block;
@@ -195,7 +191,6 @@ article + article{
 }
 
 .spot__form p {
-    max-width: 303px;
     margin-bottom: 37px;
     line-height: 1.69;
 }
@@ -211,9 +206,7 @@ article + article{
     border-radius: 8px;
     background-color: #ffffff;
     height: 40px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 13px;
+    padding: 11px 0 11px 13px;
     font-size: 16px;
     color: #9b9b9b;
     margin: 5px 0px 14px 0px;
@@ -234,9 +227,6 @@ article + article{
 /*-------------------------------- 
 -------------------------servicios profesionales*/
 .services{
-    padding: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
     text-align: center;
     clear: right;
 }
@@ -258,10 +248,7 @@ article + article{
 .services > a {
     display: inline-block;
     text-decoration: none;
-    padding-left: 46px;
-    padding-right: 34px;
-    padding-bottom: 11px;
-    padding-top: 10px;
+    padding-top: 10px 34px 11px 46px;
     margin-top: 13px;
     font-weight: 600;
 }
@@ -301,4 +288,177 @@ article + article{
 .foot-element__copyright {
     font-size: 14px;
     color: #4a4a4a;
+}
+
+
+
+/*---------------------
+----------------LAPTOP*/
+
+@media (min-width: 1024) {
+
+    .section-intro {
+        padding: 61px 0 65px 61px;
+    } 
+
+    
+        
+
+    .spot {
+        height: 557px;
+        padding: 100px 300px;
+    }
+
+    .spot__form {
+        margin-left: 37px;
+        float: right;
+    }
+
+    .spot__form p {
+        max-width: 303px;
+    }
+
+
+
+    .services {
+    padding: 100px;
+    margin: 0 200px;
+    }
+}
+
+/*----------------------
+----------------TABLET*/
+
+@media (max-width: 1023px) {
+
+    header {
+        height: 48px;
+        padding-left: 10px;
+        background-color: #333;
+    }
+    
+    header, nav, nav > a {
+        display: flex;
+    }
+
+    .navbar__list-ini {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100%
+    }
+    
+    nav > a {
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+    }    
+
+    header > button {
+        background-color: transparent;
+        border: 0;
+        padding-top: 16px;
+        padding-left: 18px;
+        user-select: none;
+    }
+
+    header > button:focus + nav {
+        transform: translate3d(0, 0, 0);
+    }
+    
+    header > button > span:not(.sr-only) {
+        display: block;
+        width: 1.75rem;
+        height: 0.1875rem;
+        background-color: #fff;
+    }
+    
+    header > button > span + span {
+      margin-top: 0.3125rem;
+    }
+    
+    .sr-only {
+        position: absolute;
+        text-indent: -9999rem;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.875rem;
+        transform: translate3d(100%, 0, 0);
+        transition: transform .25s ease-in-out;
+    }
+
+
+
+
+    .section-intro {
+        padding: 61px 75px 65px 79px;
+    }
+
+    .training {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .training:last-child {
+        display: flex;
+        flex-grow: 2;
+        min-width: 100%;
+    }
+
+
+
+
+
+    .spot {
+        height: 774px;
+    }
+
+    .spot > .container {
+        padding: 43px 79px 56px 79px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spot__video {
+        order: 1;
+    }
+
+
+    .spot__form {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 38px;
+        order: -1
+    }
+
+
+    .services {
+        padding: 61px 104px 81px 104px;
+    }
+
+    .services > a {
+        margin-top: 28px;
+    }
+
+}
+
+
+
+/*---------------------------
+----------------SMART PHONE*/
+
+@media (max-width: 320px) {
+
 }
