@@ -83,15 +83,12 @@ header {
 
 
 .section-intro {
-    height: 382px;
     background-color: #efefef;
     clear: both;
 }
 
 .section-intro h1 {
-    font-size: 62px;
     color: #4a4a4a;
-    margin-bottom: 20px;
     font-weight: 300;
 }
 
@@ -100,10 +97,6 @@ header {
     text-decoration: none;
     border-radius: 8px;
     background-color: #7ed321;
-    padding-left: 16px;
-    padding-right: 19px;
-    padding-bottom: 18px;
-    padding-top: 15px;
     font-weight: 600;
 }
 
@@ -113,11 +106,6 @@ header {
 }
 
 .section-intro p {
-    max-width: 833px;
-    min-height: 95px;
-    line-height: 27px;
-    font-size: 18px;
-    margin-bottom: 12px;
     font-weight: 300;
 }
 
@@ -133,33 +121,17 @@ header {
     padding: 69px 98px;
 }
 
-article img {
-    float: left;
-    margin-right: 16px;
-    margin-top: 5px;
-}
 
-article + article{
-    margin-left: 30px;
-}
-
-.col {
-    max-width: 395px;
-}
 
 .col a {
     display: inline-block;
     text-decoration: none;
-    font-size: 26px;
     color: #4a90e2;
-    margin-bottom: 13px;
     font-weight: 300;
 }
 
 .col p {
-    font-size: 16px;
     color: #333333;
-    line-height: 1.69;
 }
 
 
@@ -168,7 +140,6 @@ article + article{
 
 
 .spot {
-    height: 557px;
     background-color: #e8f6fc;
     display: flex;
     flex-wrap: wrap;
@@ -176,24 +147,11 @@ article + article{
     clear: left;    
 }
 
-
-
-.spot__video {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .spot__form h3 {
-    font-size: 26px;
     color: #4a4a4a;
-    margin-bottom: 10px;
     font-weight: 300;
 }
 
-.spot__form p {
-    margin-bottom: 37px;
-    line-height: 1.69;
-}
 
 .spot__form__send-email__label, .spot__form p {
     font-size: 16px;
@@ -205,11 +163,8 @@ article + article{
     border: 1px #dadada solid;
     border-radius: 8px;
     background-color: #ffffff;
-    height: 40px;
-    padding: 11px 0 11px 13px;
     font-size: 16px;
     color: #9b9b9b;
-    margin: 5px 0px 14px 0px;
 }
 
 .button--rounded {
@@ -232,10 +187,8 @@ article + article{
 }
 
 .services h2 {
-    font-size: 34px;
     color: #4a4a4a;
     text-align: center;
-    margin-bottom: 28px;
     font-weight: 300;
 }
 
@@ -248,8 +201,6 @@ article + article{
 .services > a {
     display: inline-block;
     text-decoration: none;
-    padding-top: 10px 34px 11px 46px;
-    margin-top: 13px;
     font-weight: 600;
 }
 
@@ -258,11 +209,7 @@ article + article{
 -------------------------FOOTER*/
 
 .foot-element {
-    padding-top: 14.5px;
     border-top: 1px #e5e5e5 solid; 
-    height: 116px;
-    margin-left: 97px;
-    margin-right: 97px;
     display: flex;
     justify-content: space-between;
 }
@@ -281,12 +228,9 @@ article + article{
     color: #4a90e2;
     display: inline;
     text-decoration: none;
-    font-size: 16px;
-    margin: 18px;
 }
 
 .foot-element__copyright {
-    font-size: 14px;
     color: #4a4a4a;
 }
 
@@ -295,34 +239,123 @@ article + article{
 /*---------------------
 ----------------LAPTOP*/
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
+
+    .btn-menu-mobile {
+        display: none;
+    }
 
     .section-intro {
+        height: 382px;
         padding: 61px 0 65px 61px;
     } 
-
     
-        
+    .section-intro h1 {
+        font-size: 62px;
+        margin-bottom: 20px;
+    }
+
+    .section-intro a {
+        padding: 15px 19px 18px 16px;
+    }
+
+    .section-intro p {
+        max-width: 833px;
+        min-height: 95px;
+        margin-bottom: 12px;
+    }
+    
+    article img {
+        float: left;
+        margin-right: 16px;
+        margin-top: 5px;
+    }
+    
+    article + article{
+        margin-left: 30px;
+    }
+    
+    .col {
+        max-width: 395px;
+    }
+    .col a {
+        font-size: 26px;
+        margin-bottom: 13px;
+    }
+
+    .col p {
+        font-size: 16px;
+        line-height: 1.69;
+    }
 
     .spot {
         height: 557px;
         padding: 100px 300px;
     }
 
+    .spot > .container {
+        display: flex;
+    }
+
+    .spot__video {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 500px;
+    }
+
+    video {
+        max-width: 100%;
+    }
+
     .spot__form {
         margin-left: 37px;
-        float: right;
+    }
+
+    .spot__form h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
     }
 
     .spot__form p {
         max-width: 303px;
+        margin-bottom: 37px;
+        line-height: 1.69;
     }
 
-
+    .spot__form__send-email__input {
+        height: 40px;
+        padding: 11px 0 11px 13px;
+        margin: 5px 0px 14px 0px;
+    }
 
     .services {
-    padding: 100px;
-    margin: 0 200px;
+        padding: 100px 0;
+        margin: 0 200px;
+    }
+
+    .services h2 {
+        font-size: 34px;
+        margin-bottom: 28px;
+    }
+
+    .services > a {
+        padding: 10px 34px 11px 46px;
+        margin-top: 13px;
+    }
+
+    .foot-element {
+        padding-top: 14.5px;
+        height: 116px;
+        margin: 0 97px;
+    }
+
+    .foot-element__li li a{
+        font-size: 16px;
+        margin: 18px;
+    }
+
+    .foot-element__copyright {
+        font-size: 14px;
     }
 }
 
@@ -331,13 +364,15 @@ article + article{
 
 @media (max-width: 1023px) {
 
+/*menú desplazado*/
+
     header {
         height: 48px;
         padding-left: 10px;
         background-color: #333;
     }
     
-    header, nav, nav > a {
+    header, nav, nav > a, {
         display: flex;
     }
 
@@ -397,11 +432,34 @@ article + article{
         transition: transform .25s ease-in-out;
     }
 
+    form > label, form > input {
+        display: none;
+    }
 
 
+    /*fin de menú desplazado*/
 
+
+    
     .section-intro {
-        padding: 61px 75px 65px 79px;
+        padding: 61px 75px 64px 80px;
+    }
+
+    .section-intro h1 {
+        font-size: 62px;
+    }
+
+    .section-intro p {
+        line-height: 27px;
+        font-size: 18px;
+    }
+
+    .section-intro a {
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 8px;
+        background-color: #7ed321;
+        font-weight: 600;
     }
 
     .training {
@@ -433,6 +491,11 @@ article + article{
 
     .spot__video {
         order: 1;
+        max-width: 500px;
+    }
+
+    video {
+        max-width: 500px;
     }
 
 
@@ -461,4 +524,48 @@ article + article{
 
 @media (max-width: 320px) {
 
+    .section-intro {
+        padding: 59px 15px 40px 15px;
+    }
+
+    .section-intro h1 {
+        font-size: 36px;
+    }
+
+    .section-intro p {
+        line-height: 23px;
+        font-size: 16px;
+    }
+
+
+    article > .col {
+        padding:41px 0 19px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col + .col {
+        margin-top: 11px;
+        border-top: 4px solid #979797;
+    }
+
+    article img {
+        margin-top: 10px;
+        margin-bottom: 16px;
+        height: 287px;
+        width: 287px;
+    }
+
+    .spot__video {
+        order: 1;
+        max-width: 320px;
+    }
+
+    video {
+        max-width: 320px;
+    }
+
+    .foot-element {
+        display: none;
+    }
 }
